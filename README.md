@@ -1,3 +1,3 @@
 # solar-system-explorer
 
-navbar done
+navbar done - background dark
