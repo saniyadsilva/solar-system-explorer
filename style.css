@@ -1,0 +1,51 @@
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    background-image:
+        linear-gradient(
+            rgba(5, 8, 22, 0.35),
+            rgba(5, 8, 22, 0.55)
+        ),
+        url("./images/space.jpg");
+
+    background-size: contain;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+
+#home{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+section h2 {
+    margin-bottom: 20px;
+}
+#solar-system{
+    min-height: 30rem;
+    position:relative;
+    overflow: hidden;
+    background: radial-gradient(
+        circle,
+        #172554,
+        #0b1026 55%,
+        #050816
+    );
+}
+#planets{
+    background: linear-gradient(
+        to bottom,
+        #050816,
+        #111827
+    );
+}
