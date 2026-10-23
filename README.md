@@ -3,3 +3,5 @@
 background set
 
 planets
+
+sun added
