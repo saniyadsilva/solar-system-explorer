@@ -81,3 +81,49 @@ section h2 {
     height: 100%;
     border-radius: 50%;
 }
+
+/* Fixed visible orbit */
+.mercury-track {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dotted white;
+    border-radius: 50%;
+}
+
+/* Rotating container */
+.mercury-orbit {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: mercury-revolve 4s linear infinite;
+}
+
+/* Mercury */
+.mercury {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ddd, #777, #333);
+}
+
+/* Mercury's revolution */
+@keyframes mercury-revolve {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
