@@ -4,4 +4,5 @@ background set
 
 planets
 
-sun added
+sun and mercury added
+
