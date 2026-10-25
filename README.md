@@ -3,3 +3,6 @@
 background set
 
 planets
+
+sun and mercury added
+
