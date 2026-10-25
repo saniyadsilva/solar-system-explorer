@@ -127,3 +127,160 @@ section h2 {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+/* Venus's fixed visible orbit */
+.venus-track {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dotted white;
+    border-radius: 50%;
+}
+
+/* Rotating container for Venus */
+.venus-orbit {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: venus-revolve 7s linear infinite;
+}
+
+/* Venus */
+.venus {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: -8.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        #fff0bd,
+        #d9a65b,
+        #996633
+    );
+}
+
+/* Venus's revolution */
+@keyframes venus-revolve {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Earth's fixed visible orbit */
+.earth-track {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dotted white;
+    border-radius: 50%;
+}
+
+/* Rotating container for Earth */
+.earth-orbit {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: earth-revolve 10s linear infinite;
+}
+
+/* Earth */
+.earth {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        #a7f3d0,
+        #2563eb 55%,
+        #10234a
+    );
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+/* Earth's revolution */
+@keyframes earth-revolve {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Mars's fixed visible orbit */
+.mars-track {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dotted white;
+    border-radius: 50%;
+}
+
+/* Rotating container for Mars */
+.mars-orbit {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: mars-revolve 14s linear infinite;
+}
+
+/* Mars */
+.mars {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        #ffb199,
+        #dc4c35 55%,
+        #70251f
+    );
+    box-shadow: 0 0 8px rgba(220, 76, 53, 0.5);
+}
+
+/* Mars's revolution */
+@keyframes mars-revolve {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
